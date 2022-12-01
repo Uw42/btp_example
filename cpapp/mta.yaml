@@ -8,7 +8,7 @@ modules:
     path: gen/srv
     requires:
       - name: cpapp-db
-      - name: cpapp-auth
+      - name: cpapp-uaa
     provides:
       - name: srv-api
         properties:
@@ -105,7 +105,7 @@ resources:
     parameters:
       service: hana
       service-plan: hdi-shared
-  - name: cpapp-auth
+  - name: cpapp-uaa
     type: org.cloudfoundry.managed-service
     parameters:
       config:
